@@ -1,0 +1,185 @@
+.library-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 12px;
+  background: #101115;
+  text-align: center;
+}
+
+.library-header h1 {
+  margin: 0;
+  color: #f0f0f0;
+  font-size: 24px;
+}
+
+.library-header p {
+  margin: 4px 0 8px;
+}
+
+.library-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.library-navigation a {
+  color: #b8b8b8;
+  text-decoration: none;
+}
+
+.library-navigation a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.office-page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px 12px;
+  background: #16171c;
+  color: #b8b8b8;
+}
+
+.office-section {
+  width: 100%;
+  max-width: 760px;
+  flex: 1;
+  text-align: center;
+}
+
+.office-section h1 {
+  margin: 0 0 12px;
+  color: #f0f0f0;
+  font-size: clamp(42px, 6vw, 56px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.office-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.office-search label {
+  font-size: 18px;
+}
+
+.office-search input {
+  width: 178px;
+  height: 22px;
+  padding: 2px 6px;
+  border: 1px solid #777;
+  border-radius: 2px;
+  background: #444;
+  color: #f0f0f0;
+  font-size: 13px;
+}
+
+.office-search input:focus-visible {
+  outline: 2px solid #b9c9ff;
+  outline-offset: 1px;
+}
+
+.office-table-container {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.office-table {
+  border-collapse: collapse;
+  color: #b8b8b8;
+  font-size: 18px;
+}
+
+.office-table th,
+.office-table td {
+  padding: 8px;
+  border: 1px solid #92939a;
+  white-space: nowrap;
+}
+
+.office-table th {
+  font-weight: 700;
+}
+
+.office-actions {
+  white-space: nowrap;
+}
+
+.office-actions button + button {
+  margin-left: 5px;
+}
+
+.office-actions button {
+  min-width: 56px;
+  padding: 3px 8px;
+  border: 0;
+  border-radius: 2px;
+  background: #666;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+.office-actions button:hover:not(:disabled) {
+  background: #828282;
+}
+
+.office-actions button:focus-visible {
+  outline: 2px solid #b9c9ff;
+  outline-offset: 2px;
+}
+
+.office-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.office-message {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.office-error {
+  color: #ff9a9a;
+}
+
+.office-page footer {
+  padding-top: 16px;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 520px) {
+  .office-page {
+    padding: 0 12px 12px;
+  }
+
+  .office-table {
+    font-size: 15px;
+  }
+
+  .office-table th,
+  .office-table td {
+    padding: 7px 5px;
+  }
+
+  .office-actions button {
+    min-width: auto;
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+
+  .office-actions button + button {
+    margin-left: 3px;
+  }
+}
