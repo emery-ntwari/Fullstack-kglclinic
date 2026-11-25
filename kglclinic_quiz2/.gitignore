@@ -1,0 +1,17 @@
+
+/target/
+/bin/
+*.class
+*.jar
+
+.idea/
+.vscode/
+.amazonq/
+*.iml
+
+.DS_Store
+Thumbs.db
+
+*.txt
+codebase.txt
+full_codebase.txt
